@@ -10,8 +10,10 @@ router.get('/', async (req, res) => {
     } catch (error) {
         books = []
     }
-    
-    res.render('index', books: books)
+
+    res.render('index', {
+        books: books
+    })
 
 })
 
